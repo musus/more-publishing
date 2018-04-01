@@ -34,6 +34,13 @@
 	&.arch {
 	  background-image: url('http://placeimg.com/850/530/arch');
 	}
+	&.shibuya {
+	  background-image: url("../img/bg-shibuya.jpg");
+	}
+	&.street {
+	  background-image: url("../img/bg-street.jpg");
+	}
+
 	&.red {
 	  background-color: #ce3635;
 	}
