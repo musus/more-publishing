@@ -145,4 +145,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-
+# Compail files
+*.html
+parts/*.html
+assets/*
+package-lock.json
