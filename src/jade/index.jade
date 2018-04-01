@@ -23,15 +23,18 @@ html(lang="ja")
 							a(href='#') PHOTO
 						li.menu__item
 							a(href='#') TRIP
-			.box.arch.skill
+				#large-header.large-header
+					canvas#demo-canvas
+			.box.street.skill
 				.row
 					.col-lg-6.col-sm-12
-						.title
-							h1 Susumu Seino
+						.block.cf
+							.block-half
+								h1 Susumu Seino
 							.text-left
-								p 東京都足立区に生まれ、9歳で初めてインターネットを使い数ヶ月後にはHTMLを書いてウェブサイトを制作し始めました。
-								p 飲食コンサルティング会社のインハウスのクリエイターとして動画・DTPデザイン・ウェブサイトの制作に携わり、2015年にフリーランスのwebサイト制作者として独立。
-								p 現在は、WordPressを活用したメディアサイト・会員サイトの制作、<br>MA(マーケティング・オートメーション)やwebコンテンツマーケティングなどの<br>テクノロジー分野に特化したデジタルマーケティングを得意とする。
+								p WondPressやCMSを活用したデジタルマーケティングのハブの企画・開発・運用をおこっています。
+							.block-half
+								img.icon(src='/assets/img/icon.jpg')
 					.col-lg-6.col-sm-12.skill-bar-wrapper
 						h1.h1--skills Skills
 						.text-left
@@ -65,13 +68,32 @@ html(lang="ja")
 							span(style='float:right;') 55%
 							.skillbar-container.clearfix(data-percent='55%')
 								.skills(style='background: white;')
+							// Photography
+							| Photography
+							span(style='float:right;') 50%
+							.skillbar-container.clearfix(data-percent='50%')
+								.skills(style='background: white;')
 							// Videograph
 							| Videograph
-							span(style='float:right;') 65%
-							.skillbar-container.clearfix(data-percent='65%')
+							span(style='float:right;') 55%
+							.skillbar-container.clearfix(data-percent='55%')
+								.skills(style='background: white;')
+							// Drone
+							| Drone (DJI MavicPro)
+							span(style='float:right;') 70%
+							.skillbar-container.clearfix(data-percent='90%')
 								.skills(style='background: white;')
 							// Football
 							| Football
-							span(style='float:right;') 90%
-							.skillbar-container.clearfix(data-percent='9%')
+							span(style='float:right;') 60%
+							.skillbar-container.clearfix(data-percent='60%')
 								.skills(style='background: white;')
+							| Freedom
+							span(style='float:right;') 90%
+							.skillbar-container.clearfix(data-percent='90%')
+							// Freedom
+							| Freedom
+							span(style='float:right;') 100%
+							.skillbar-container.clearfix(data-percent='100%')
+								.skills(style='background: white;')
+		include parts/_footer.jade

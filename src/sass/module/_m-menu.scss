@@ -1,12 +1,12 @@
 .menu {
   margin: 10px;
-  border: 4px solid white;
+  border: 3px solid white;
   padding: 15px 20px;
   font-size: 16px;
   font-weight: bold;
   &__item {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 15px;
 	a {
 	  color: #FFFFFF;
 	  &:hover {
@@ -18,7 +18,7 @@
 	}
 	&:after {
 	  content: "/";
-	  margin-left: 30px;
+	  margin-left: 15px;
 	}
 	&:last-child {
 	  margin-right: 0;
