@@ -6,7 +6,20 @@ html(lang="ja")
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(charset='utf-8')
 		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+		script(src='src/js/app.js')
 	body
-		include parts/_header.jade
-		include parts/_front.jade
-		include parts/_footer.jade
+		.page
+			.box.red
+				.typewriter
+					h1 More Publishing
+					a.typewrite(href='', data-period='2000', data-type='[ "               ...", "Hi, I am  Susumu.", "I am Creative.", "I Love to Develop.", "I Love WordPress." ]')
+					span.wrap
+					ul.menu
+						li.menu__item
+							a(href='#') CODE
+						li.menu__item
+							a(href='#') PHOTO
+						li.menu__item
+							a(href='#') TRIP
+			.box.sakura
+				h1 Profile

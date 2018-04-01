@@ -1,0 +1,47 @@
+.page {
+  height: 100vh;
+  text-align: center;
+  * {
+	color: #fff;
+	text-decoration: none;
+  }
+  .box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	// vh central
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	padding: 30px;
+	box-sizing: border-box;
+
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+
+	background-size: cover;
+	background-position: center;
+	&.sakura {
+	  background-image: url("../img/bg-sakura-second.jpg");
+	  opacity: 0.8;
+	}
+	&.arch {
+	  background-image: url('http://placeimg.com/850/530/arch');
+	}
+	&.red {
+	  background-color: #ce3635;
+	}
+
+	p {
+	  font-size: 20px;
+	  color: white;
+	  line-height: 2;
+	}
+  }
+}
