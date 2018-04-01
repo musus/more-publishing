@@ -7,12 +7,14 @@ html(lang="ja")
 		meta(charset='utf-8')
 		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
 		script(src='src/js/app.js')
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+		script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
 	body
 		.page
 			.box.red
 				.typewriter
 					h1 More Publishing
-					a.typewrite(href='', data-period='2000', data-type='[ "               ...", "Hi, I am  Susumu.", "I am Creative.", "I Love to Develop.", "I Love WordPress." ]')
+					a.typewrite(href='', data-period='2000', data-type='[ "     ", "Hi, I am  Susumu.", "I am Creative.", "I Love to Develop.", "I Love WordPress." ]')
 					span.wrap
 					ul.menu
 						li.menu__item
@@ -21,5 +23,55 @@ html(lang="ja")
 							a(href='#') PHOTO
 						li.menu__item
 							a(href='#') TRIP
-			.box.sakura
-				h1 Profile
+			.box.arch.skill
+				.row
+					.col-lg-6.col-sm-12
+						.title
+							h1 Susumu Seino
+							.text-left
+								p 東京都足立区に生まれ、9歳で初めてインターネットを使い数ヶ月後にはHTMLを書いてウェブサイトを制作し始めました。
+								p 飲食コンサルティング会社のインハウスのクリエイターとして動画・DTPデザイン・ウェブサイトの制作に携わり、2015年にフリーランスのwebサイト制作者として独立。
+								p 現在は、WordPressを活用したメディアサイト・会員サイトの制作、<br>MA(マーケティング・オートメーション)やwebコンテンツマーケティングなどの<br>テクノロジー分野に特化したデジタルマーケティングを得意とする。
+					.col-lg-6.col-sm-12.skill-bar-wrapper
+						h1.h1--skills Skills
+						.text-left
+							// Digital Marketing
+							| Digital Marketing
+							span(style='float:right;') 75%
+							.skillbar-container.clearfix(data-percent='75%')
+								.skills(style='background: white;')
+							// WordPress
+							| WordPress
+							span(style='float:right;') 80%
+							.skillbar-container.clearfix(data-percent='80%')
+								.skills(style='background: white;')
+							// WooCommerce
+							| WooCommerce
+							span(style='float:right;') 70%
+							.skillbar-container.clearfix(data-percent='70%')
+								.skills(style='background: white;')
+							// Code
+							| Code ( HTML / CSS )
+							span(style='float:right;') 80%
+							.skillbar-container.clearfix(data-percent='80%')
+								.skills(style='background: white;')
+							// Program
+							| Program ( PHP / JavaScript )
+							span(style='float:right;') 70%
+							.skillbar-container.clearfix(data-percent='70%')
+								.skills(style='background: white;')
+							// Design
+							| Design
+							span(style='float:right;') 55%
+							.skillbar-container.clearfix(data-percent='55%')
+								.skills(style='background: white;')
+							// Videograph
+							| Videograph
+							span(style='float:right;') 65%
+							.skillbar-container.clearfix(data-percent='65%')
+								.skills(style='background: white;')
+							// Football
+							| Football
+							span(style='float:right;') 90%
+							.skillbar-container.clearfix(data-percent='9%')
+								.skills(style='background: white;')

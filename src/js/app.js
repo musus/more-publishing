@@ -2,7 +2,7 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 10) || 1000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -11,7 +11,7 @@ var TxtType = function(el, toRotate, period) {
 TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
-
+ 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
@@ -31,7 +31,7 @@ TxtType.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 300;
     }
 
     setTimeout(function() {
@@ -54,3 +54,23 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+
+// Skills
+
+$(window).scroll(function() {
+    var hT = $('.skill-bar-wrapper').offset().top,
+        hH = $('.skill-bar-wrapper').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT+hH-1.4*wH)){
+        jQuery(document).ready(function(){
+            jQuery('.skillbar-container').each(function(){
+                jQuery(this).find('.skills').animate({
+                    width:jQuery(this).attr('data-percent')
+                }, 3000); // 5 seconds
+            });
+        });
+    }
+});
