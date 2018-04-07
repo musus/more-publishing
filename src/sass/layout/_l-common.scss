@@ -1,61 +1,76 @@
 .page {
-  height: 100vh;
-  text-align: center;
-  * {
+  color: #fff;
+  a {
 	color: #fff;
-	text-decoration: none;
-  }
-  .box {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-
-	// vh central
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	padding: 20px;
-	box-sizing: border-box;
-
-	width: 100vw;
-	height: auto;
-	min-height: 100vh;
-
-	background-size: cover;
-	background-position: center;
-	&.sakura {
-	  background-image: url("../img/bg-sakura-second.jpg");
-	  opacity: 0.8;
-	}
-	&.arch {
-	  background-image: url('http://placeimg.com/850/530/arch');
-	}
-	&.shibuya {
-	  background-image: url("../img/bg-shibuya.jpg");
-	}
-	&.street {
-	  background-image: url("../img/bg-street.jpg");
-	}
-
-	&.red {
-	  background-color: #ce3635;
-	}
-
-	p {
-	  font-size: 18px;
-	  color: white;
-	  line-height: 2;
+	&:hover {
+	  color: #fff;
 	}
   }
 }
 
-////////////////////////
+.box {
 
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+
+  // vh central
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.sakura {
+  background-image: url("../img/bg-sakura-second.jpg");
+  opacity: 0.8;
+}
+
+.arch {
+  background-image: url('http://placeimg.com/850/530/arch');
+}
+
+.shibuya {
+  background-image: url("../img/bg-shibuya.jpg");
+}
+
+.street {
+  background-image: url("../img/bg-street.jpg");
+}
+
+.red {
+  background-color: #ce3635;
+}
+
+
+.page {
+  height: 100vh;
+  text-align: center;
+  p {
+	font-size: 18px;
+	line-height: 2;
+  }
+}
+
+.red {
+  background-color: #ce3635;
+}
+
+////////////////////////
 
 .skill {
   .h1--sikills {
@@ -82,27 +97,22 @@
 	width: 100%;
 	background-color: #666463;
 	background-color: rgba(255, 255, 255, .1);
-	height: 35px;
 	height: 5px;
   }
 
   .skills {
-	height: 35px;
 	height: 5px;
-	width: 0px;
+
   }
 }
 
-
 ///////////////////////
 
-
 #large-header {
-  position: absolute;
+  position: absolute
   top: 0;
   opacity: 0.8;
 }
-
 
 .block {
   &-half {
@@ -111,7 +121,8 @@
 	display: flex;
   }
 }
+
 .icon {
-  width:100%;
+  width: 100%;
   height: 100%;
 }
