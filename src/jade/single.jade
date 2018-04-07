@@ -1,16 +1,56 @@
 doctype html
 html(lang="ja")
-	head
-		title pageTitle
-		link(rel='stylesheet', href='./assets/css/app.css')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		meta(charset='utf-8')
-		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-	body
-		include parts/_header.jade
-			article.entryContent
-				h1 articleTitle
-				p ipsum ipsum ipsum ipsum ipsum　ipsum　ipsum　ipsum.
-				p ipsum ipsum ipsum ipsum ipsum　ipsum　ipsum　ipsum.
-			include parts/_sidebar.jade
-		include parts/_footer.jade
+    head
+        title More Publishing by Susumu Seino
+        link(rel='stylesheet', href='./assets/css/app.css')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(charset='utf-8')
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+        script(src='src/js/app.js')
+        link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+        script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Cormorant+Garamond|Crimson+Text')
+    body.single
+            .single__title.red
+                h1
+                    a(href='/').color_white More Publishing
+                .typewrite(href='', data-period='2000', data-type='[ "     ", "Hi, I am  Susumu.", "I am Creative.", "I Love to Develop.", "I Love WordPress." ]')
+                span.wrap
+                h1 インターネットの未来を考える会に行ってきたよ
+                .date
+                    span.postdate Postdate : 2018.4.4
+                    span.update Lastupdate : 2018.4.5
+        .container
+            .row
+                .col-lg-12.col-sm-12.the_content
+                    img.thumbnail(src='assets/img/bg-sakura.jpg')
+                    h2 さて、これからの話しをしよう
+                    p っていうのは冗談ですが、ちゃんと何かあったときのために備忘録っす。
+                    p お昼ごはんを食べてから1時間くらいしたら心臓がキューッとつかまれるような痛みと苦しさを10~20分間を2セットくらい。体調がすぐれないのか、夜には今までないほどの湿疹が出て恐怖でした。「こりゃーアレルギー性のなんちゃらだ！」と推理した僕は、翌日に病院にアレルギーに強い内科に行くことに。
+                    p ところが、一過性のものだろうということしかわからず簡易な心電図で少し様子を見たところ「幅広QRS波ぎみですね。まー問題ないでしょう」とのこと。よくわかんないですが調べてみたところ、心室性期外収縮の疑いもありそうです。とりあえず、明日はビッグデーなので明後日以降に循環器科に行って問診をうけます。
+                    p みんな！人間ドック行きなね！サムネは僕が今季撮った桜です。
+                    h3 過去を語る必要がある
+                    p お昼ごはんを食べてから1時間くらいしたら心臓がキューッとつかまれるような痛みと苦しさを10~20分間を2セットくらい。体調がすぐれないのか、夜には今までないほどの湿疹が出て恐怖でした。「こりゃーアレルギー性のなんちゃらだ！」と推理した僕は、翌日に病院にアレルギーに強い内科に行くことに。
+                    p ところが、一過性のものだろうということしかわからず簡易な心電図で少し様子を見たところ「幅広QRS波ぎみですね。まー問題ないでしょう」とのこと。よくわかんないですが調べてみたところ、心室性期外収縮の疑いもありそうです。とりあえず、明日はビッグデーなので明後日以降に循環器科に行って問診をうけます。
+                    h3 過去を語る必要がある
+                    p お昼ごはんを食べてから1時間くらいしたら心臓がキューッとつかまれるような痛みと苦しさを10~20分間を2セットくらい。体調がすぐれないのか、夜には今までないほどの湿疹が出て恐怖でした。「こりゃーアレルギー性のなんちゃらだ！」と推理した僕は、翌日に病院にアレルギーに強い内科に行くことに。
+                    p ところが、一過性のものだろうということしかわからず簡易な心電図で少し様子を見たところ「幅広QRS波ぎみですね。まー問題ないでしょう」とのこと。よくわかんないですが調べてみたところ、心室性期外収縮の疑いもありそうです。とりあえず、明日はビッグデーなので明後日以降に循環器科に行って問診をうけます。
+            .row
+                .col-lg-12.col-sm-12
+                    h1.headline Related Posts
+                .col-lg-4.col-sm-12
+                    a(href='single.html')
+                        img.thumbnail(src='assets/img/bg-sakura.jpg')
+                        p 新しい記事のタイトルはこれだ
+                .col-lg-4.col-sm-12
+                    a(href='single.html')
+                        img.thumbnail(src='assets/img/bg-sakura.jpg')
+                        p 新しい記事のタイトルはこれだ
+                .col-lg-4.col-sm-12
+                    a(href='single.html')
+                        img.thumbnail(src='assets/img/bg-sakura.jpg')
+                        p 新しい記事のタイトルはこれだ
+
+
+
+        include parts/_footer.jade
