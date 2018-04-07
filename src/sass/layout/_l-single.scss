@@ -16,11 +16,13 @@
 	padding: 80px;
 	margin-bottom: 40px;
 	color: #fff;
-	h1 {
+	.the_title {
 	  color: #fff;
 	  max-width: 100%;
 	  font-size: 26px;
 	  white-space: normal;
+	  margin-bottom: 10px;
+
 	  a {
 		color: #fff;
 	  }
@@ -41,12 +43,13 @@
 	word-wrap: break-word;
 	margin-bottom: 85px;
 
+	img,h1,h2,h3,h4,p {
+	  margin-bottom: 25px;
+	}
+
   }
   .typewrite {
 	height: 30px;
-  }
-  img,h1,h2,h3,h4,p {
-	margin-bottom: 25px;
   }
 }
 
@@ -58,4 +61,21 @@ h1.headline {
   margin-bottom: 35px;
   //font-family: 'Crimson Text', serif;
   font-family: 'Cormorant Garamond', serif;
+}
+
+#container {
+  background: #00a0d2;
+  text-align: center;
+
+}
+
+.fade-up {
+  transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+  -o-transition: transform 0.8s;
 }

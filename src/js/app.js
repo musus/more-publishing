@@ -56,21 +56,33 @@ window.onload = function() {
 };
 
 
+// fade
+$(window).on('load',function(){
 
-// Skills
+    // fade-up
+    $(window).scroll(function (){
+        $('.fade-up').each(function(){
+            var POS = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
 
-$(window).scroll(function() {
-    var hT = $('.skill-bar-wrapper').offset().top,
-        hH = $('.skill-bar-wrapper').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-1.4*wH)){
-        jQuery(document).ready(function(){
-            jQuery('.skillbar-container').each(function(){
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 3000); // 5 seconds
-            });
+            if (scroll > POS - windowHeight){
+                $(this).css({
+                    'opacity':'1',
+                    'transform':'translateY(0)',
+                    '-webkit-transform':'translateY(0)',
+                    '-moz-transform':'translateY(0)',
+                    '-ms-transform':'translateY(0)'
+                });
+            } else {
+                $(this).css({
+                    'opacity':'0',
+                    'transform':'translateY(150px)',
+                    '-webkit-transform':'translateY(150px)',
+                    '-moz-transform':'translateY(150px)',
+                    '-ms-transform':'translateY(150px)'
+                });
+            }
         });
-    }
+    });
 });
