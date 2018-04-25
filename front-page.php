@@ -11,6 +11,11 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/app.css">
+	<style>
+		h1 {
+			color: #ffffff;
+		}
+	</style>
 </head>
 <body>
 <div class="page">
@@ -20,7 +25,7 @@
 									   data-type="[ &quot;     &quot;, &quot;Hi, I am  Susumu.&quot;, &quot;I am Creative.&quot;, &quot;I Love to Develop.&quot;, &quot;I Love WordPress.&quot; ]"
 									   class="typewrite"></a><span class="wrap"></span>
 			<ul class="menu">
-				<li class="menu__item"><a href="<?php home_url('/home'); ?>">BLOG</a></li>
+				<li class="menu__item"><a href="<?php echo esc_url( home_url( '/mypage' ) ); ?>">BLOG</a></li>
 				<li class="menu__item"><a href="https://profiles.wordpress.org/musus">WordPress</a></li>
 				<li class="menu__item"><a href="https://github.com/musus">CODE</a></li>
 			</ul>
@@ -31,8 +36,8 @@
 	</div>
 	<div class="box street skill">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">
-				<h1>Susumu Seino</h1>
+			<div class="col-sm-6 col-xs-12 text-left">
+				<h1 class="text-center">Susumu Seino</h1>
 				<p>I'm a Japanese digital nomad that loves creating products online. My typical day to day consists of
 					Digital Marketing, WordPress, and Front-End Design.</p>
 				<p>Usually, I live in Tokyo but that lives multiple residences in various locations because in the
