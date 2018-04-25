@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="<?php echo get_template_directory_uri();?>/src/js/app.js"></script>
-	<script src="<?php echo get_template_directory_uri();?>/assets/js/skill.js"></script>
+	<script src="<?php echo get_stylesheet_directory();?>/src/js/app.js"></script>
+	<script src="<?php echo get_stylesheet_directory();?>/assets/js/skill.js"></script>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/app.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory();?>/assets/css/app.css">
 </head>
 <body>
 <div class="page">
@@ -42,11 +42,11 @@
 					デジタルマーケティング・WordPressを活用したサイトやサービス開発・フロントエンドデザインを行いながら生活しているデジタルノマドな日本人です。9歳の頃にHTMLを書き始めてからオンラインプロダクトに対する夢と憧れがあり、26歳で独立して今に至ります。</p>
 				<p>普段は東京に住んでいますが新しいアイディアを探すために多拠点という生活を目指し、年間1/3は国内外問わず東京以外で生活しています。</p>
 			</div>
-			<div class="col-sm-6 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/assets/img/profile-pic.jpg"></div>
+			<div class="col-sm-6 col-xs-12"><img src="<?php echo get_stylesheet_directory();?>/assets/img/profile-pic.jpg"></div>
 		</div>
 	</div>
 </div>
-<script src="<?php echo get_template_directory_uri();?>/js/canvas.js"></script>
+<script src="<?php echo get_stylesheet_directory();?>/js/canvas.js"></script>
 </body>
 <?php wp_footer();?>
 </html>
