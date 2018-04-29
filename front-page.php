@@ -25,7 +25,7 @@
 									   data-type="[ &quot;     &quot;, &quot;Hi, I am  Susumu.&quot;, &quot;I am Creative.&quot;, &quot;I Love to Develop.&quot;, &quot;I Love WordPress.&quot; ]"
 									   class="typewrite"></a><span class="wrap"></span>
 			<ul class="menu">
-				<li class="menu__item"><a href="<?php echo esc_url( home_url( '/mypage' ) ); ?>">BLOG</a></li>
+				<li class="menu__item"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">BLOG</a></li>
 				<li class="menu__item"><a href="https://profiles.wordpress.org/musus">WordPress</a></li>
 				<li class="menu__item"><a href="https://github.com/musus">CODE</a></li>
 			</ul>
