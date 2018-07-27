@@ -12,7 +12,7 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/app.css">
 	<style>
-		h1 {
+		h1,h2,h3 {
 			color: #ffffff;
 		}
 	</style>
@@ -75,7 +75,7 @@
                 <div class="row">
 
                     <div class="col-sm-6 col-xs-12">
-                        <h2 style="font-size: 1.4rem;">CREATIVEMAN PRODUCTIONS</h2>
+                        <h2>CREATIVEMAN PRODUCTIONS</h2>
                         <p><a href="https://www.creativeman.co.jp" target="_blank">https://www.creativeman.co.jp</a></p>
                     </div>
                     <div class="col-sm-6 col-xs-12">
@@ -87,19 +87,19 @@
                 <hr>
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <h2 style="font-size: 1.4rem;">Francfranc Brand Identity Guidelines</h2>
+                        <h2>Francfranc Brand Identity Guidelines</h2>
                         <p><a href="https://www.creativeman.co.jp" target="_blank">https://francfranc.io/</a></p>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <a href="https://www.creativeman.co.jp" target="_blank">
-                            <img style="width: 500px;height: auto" src="<?php echo get_stylesheet_directory_uri();?>/assets/img/francfranc.jpg">
+                            <img style="width: 500px;height: auto" src="<?php echo get_stylesheet_directory_uri();?>/assets/img/francfranc-work.jpg">
                         </a>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <h2 style="font-size: 1.4rem;">ビジネスサイトをこれからつくる WordPressデザイン入門</h2>
+                        <h2>ビジネスサイトをこれからつくる WordPressデザイン入門</h2>
                         <p><a href="https://www.amazon.co.jp/dp/B01CJ92UAW/" target="_blank">https://www.amazon.co.jp/dp/B01CJ92UAW/</a></p>
                     </div>
                     <div class="col-sm-6 col-xs-12">
