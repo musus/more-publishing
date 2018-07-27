@@ -36,8 +36,24 @@
 	</div>
 	<div class="box street skill">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12 text-left">
+			<div class="col-sm-6 col-xs-12 text-left col-sm-pull-6">
 				<h1 class="text-center">Susumu Seino</h1>
+                <style scoped>
+                    .hidden {
+                        display: none;
+                    }
+                    @media (max-width: 736px) {
+                        .sm-hidden {
+                            display: none;
+                        }
+                        .sm-display {
+                            display: block;
+                        }
+                    }
+                </style>
+                <div style="margin-bottom: 10px;" class="hidden sm-display">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/profile-pic.jpg">
+                </div>
 				<p>I'm a Japanese digital nomad that loves creating products online. My typical day to day consists of
 					Digital Marketing, WordPress, and Front-End Design.</p>
 				<p>Usually, I live in Tokyo but that lives multiple residences in various locations because in the
@@ -47,9 +63,57 @@
 					デジタルマーケティング・WordPressを活用したサイトやサービス開発・フロントエンドデザインを行いながら生活しているデジタルノマドな日本人です。9歳の頃にHTMLを書き始めてからオンラインプロダクトに対する夢と憧れがあり、26歳で独立して今に至ります。</p>
 				<p>普段は東京に住んでいますが新しいアイディアを探すために多拠点という生活を目指し、年間1/3は国内外問わず東京以外で生活しています。</p>
 			</div>
-			<div class="col-sm-6 col-xs-12"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/profile-pic.jpg"></div>
+			<div class="col-sm-6 col-xs-12 sm-hidden">
+                <img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/profile-pic.jpg">
+            </div>
 		</div>
 	</div>
+    <div class="box wapuu skill" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/img/bg-wapuu.jpg');">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <h1 class="text-center" style="font-size: 2.0rem;font-weight: bold;margin-bottom: 50px">Works</h1>
+                <div class="row">
+
+                    <div class="col-sm-6 col-xs-12">
+                        <h2 style="font-size: 1.4rem;">CREATIVEMAN PRODUCTIONS</h2>
+                        <p><a href="https://www.creativeman.co.jp" target="_blank">https://www.creativeman.co.jp</a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <a href="https://www.creativeman.co.jp" target="_blank">
+                            <img style="width: 500px;height: auto" src="<?php echo get_stylesheet_directory_uri();?>/assets/img/creativeman.jpg">
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <h2 style="font-size: 1.4rem;">Francfranc Brand Identity Guidelines</h2>
+                        <p><a href="https://www.creativeman.co.jp" target="_blank">https://francfranc.io/</a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <a href="https://www.creativeman.co.jp" target="_blank">
+                            <img style="width: 500px;height: auto" src="<?php echo get_stylesheet_directory_uri();?>/assets/img/francfranc.jpg">
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <h2 style="font-size: 1.4rem;">ビジネスサイトをこれからつくる WordPressデザイン入門</h2>
+                        <p><a href="https://www.amazon.co.jp/dp/B01CJ92UAW/" target="_blank">https://www.amazon.co.jp/dp/B01CJ92UAW/</a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <a href="https://www.amazon.co.jp/dp/B01CJ92UAW/" target="_blank">
+                            <img style="width: 500px;height: auto" src="<?php echo get_stylesheet_directory_uri();?>/assets/img/wpbook-848x400.jpg">
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
 </div>
 <script src="<?php echo get_stylesheet_directory_uri();?>/js/canvas.js"></script>
 </body>
